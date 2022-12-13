@@ -1,0 +1,126 @@
+:root {
+    --soft-blue: hsl(215, 52%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: var(--dark-blue);
+    width: 20.3125rem;
+    height: 33.75rem;
+    border-radius: .9375rem;
+}
+
+.main__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.main__image .image__nft {
+    width: 17.1875rem;
+    height: 17.375rem;
+    border-radius: .4375rem;
+}
+
+.main__content {
+    padding: 1.50rem 0 0 1.50rem;
+}
+
+.main__title {
+    color: var(--white);
+    font-size: 1.375rem;
+    margin-bottom: .75rem;
+}
+
+.main__title:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+.main__description {
+    color: var(--soft-blue);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    opacity: 70%;
+}
+
+.main__container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin-bottom: 1rem;
+}
+
+.main__logo, .main__hour {
+    display: flex;
+    align-items: center;
+    gap: .4375rem;
+}
+
+.main__price {
+    color: var(--cyan);
+    font-size: .9375rem;
+    font-weight: 600;
+}
+
+.main__days {
+    font-size: .9375rem;
+    color: var(--soft-blue);
+    opacity: 70%;
+}
+
+.main__line {
+    width: 17.1875rem;
+    margin: 0 auto;
+    border: .0625rem solid var(--blue);
+    opacity: 50%;
+}
+
+.main__avatar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.50rem;
+}
+
+.main__avatar .image__avatar {
+    width: 2.1875rem;
+    border: .0625rem solid var(--white);
+    border-radius: 50%;
+}
+
+.main__avatar .main__paragraph {
+    color: var(--soft-blue);
+    opacity: 80%;
+    font-size: .9375rem;
+}
+
+.main__avatar .main__span {
+    color: var(--white);
+} 
+
+.main__avatar .main__span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}

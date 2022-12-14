@@ -32,13 +32,29 @@ body {
 .main__image {
     display: flex;
     justify-content: center;
-    margin-top: 1.25rem;
+    margin: 1.25rem auto 0 auto;
+    width: 17.1875rem;
+    height: 17.375rem;
+    position: relative;
 }
 
 .main__image .image__nft {
     width: 17.1875rem;
     height: 17.375rem;
     border-radius: .4375rem;
+}
+
+.main__image:hover:before {
+    content: url('../images/icon-view.svg');
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cyan);
+    opacity: 0.5;
+    border-radius: .4375rem;
+    cursor: pointer;
 }
 
 .main__content {
